@@ -123,3 +123,5 @@ buildNumber.properties
 # End of https://www.toptal.com/developers/gitignore/api/maven,intellij
 
 frontend/node_modules
+
+src/main/resources/static/
