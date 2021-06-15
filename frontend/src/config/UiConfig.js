@@ -15,7 +15,7 @@ export const NAV_BAR_CONFIG = {
     navLogo: true,
     // 로고 스타일 (메뉴바 높이)
     navLogoStyle: {
-        height: '30px',
+        height: '25px',
     },
     // 배경 색
     navBg: 'grey',

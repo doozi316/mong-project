@@ -1,18 +1,19 @@
 <template>
     <div id="app">
         <!--  Logo  -->
-        <Header />
+        <Header/>
 
         <!--  NavBar  -->
-        <NavBar class="sky-blue-border" />
+        <NavBar/>
 
         <!-- Main View -->
-        <b-container class="red-border">
+        <b-container id="main">
             <router-view/>
         </b-container>
 
         <!-- Footer -->
-        <Footer />
+        <Footer id="footer" />
+
     </div>
 </template>
 
@@ -32,13 +33,20 @@
 </script>
 
 <style lang="scss" scoped>
+    @import 'assets/styles/font.css';
+
     #app {
-        .red-border {
-            border: 1px solid red;
+        font-family: 'NanumBarunGothic', sans-serif;
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+
+        #main {
+            flex: 1 0 auto;
         }
 
-        .sky-blue-border {
-            border: 1px solid #80feff;
+        #footer {
+            flex-shrink: 0;
         }
     }
 </style>
