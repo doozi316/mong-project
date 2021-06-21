@@ -59,7 +59,7 @@
     import {APP_INFO} from '../config/UiConfig.js';
 
     export default {
-        name: 'LoginForm',
+        name: 'Login',
         data() {
             return {
                 title: APP_INFO.title

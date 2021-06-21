@@ -3,8 +3,9 @@ import VueRouter from 'vue-router';
 
 import Main from '../components/Main.vue'
 import HelloWorld from '../components/HelloWorld.vue'
-import LoginForm from '../components/LoginForm.vue'
-import SignUpForm from '../components/SignUpForm.vue';
+import Login from '../components/Login.vue'
+import SignUp from '../components/SignUp.vue';
+import Notice from '../components/Notice.vue';
 
 Vue.use(VueRouter);
 
@@ -19,12 +20,16 @@ export const router = new VueRouter({
       component: HelloWorld
     },
     {
+      path: '/notice',
+      component: Notice
+    },
+    {
       path: '/login',
-      component: LoginForm
+      component: Login
     },
     {
       path: '/sign-up',
-      component: SignUpForm
+      component: SignUp
     }
   ]
 })

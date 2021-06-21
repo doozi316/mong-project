@@ -14,7 +14,7 @@
                         v-for="menu in menuList"
                         :key="menu.label"
                     >
-                        <router-link :to="menu.path">{{ menu.label }}</router-link>
+                        <router-link :style="navLabelStyle" class="nav-label" :to="menu.path">{{ menu.label }}</router-link>
                     </b-nav-item>
                 </b-navbar-nav>
             </b-collapse>
@@ -40,9 +40,18 @@
                 navLogoStyle: NAV_BAR_CONFIG.navLogoStyle,
                 navBg: NAV_BAR_CONFIG.navBg,
                 navAlign: NAV_BAR_CONFIG.navAlign,
+                navTextStyle: NAV_BAR_CONFIG.navTextStyle,
 
                 // MENU_CONFIG
                 menuList: MENU_CONFIG.menuList
+            }
+        },
+        computed: {
+            navLabelStyle() {
+                return {
+                    '--text-color': this.navTextStyle.color,
+                    '--text-color--hover': this.navTextStyle.colorHover,
+                }
             }
         },
         methods: {
@@ -59,5 +68,10 @@
 </script>
 
 <style lang="scss" scoped>
-
+    .nav-label {
+        color: var(--text-color);
+    }
+    .nav-label:hover {
+        color: var(--text-color--hover);
+    }
 </style>

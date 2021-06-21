@@ -60,7 +60,7 @@
     import {APP_INFO} from '../config/UiConfig.js';
 
     export default {
-        name: 'SignUpForm',
+        name: 'SignUp',
         data() {
             return {
                 title: APP_INFO.title

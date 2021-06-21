@@ -20,7 +20,13 @@ export const NAV_BAR_CONFIG = {
     // 배경 색
     navBg: 'grey',
     // 메뉴 위치 정렬 (right, left, center)
-    navAlign: 'right'
+    navAlign: 'right',
+    // 메뉴 글씨 스타일
+    navTextStyle: {
+        color: 'white',
+        colorHover: 'red',
+    }
+
 };
 
 export const FOOTER_CONFIG = {
