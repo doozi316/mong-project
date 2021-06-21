@@ -1,5 +1,5 @@
 <template>
-    <div class="container-fluid">
+    <div class="container-fluid px-0">
         <footer class="text-center text-lg-start" :class="getFooterTheme()">
             <div class="container p-4">
                 <div class="row">
